@@ -48,19 +48,21 @@ struct Landing_Page: View {
                             .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                             .padding(.vertical)
                             .frame(width:440, height:440)
-                Button("Play") {
-                             print("Button Play")
-                             player = loadBundleAudio(soundFile)
-                             print("player", player as Any)
-                             // Loop indefinitely
-                             player?.numberOfLoops = -1
-                             player?.play()
-                             } //button
-                        Button("Stop") {
-                                      print("Button Stop")
-                                      player?.stop()
-                                  } //button
                 
+                HStack{
+                    Button("Play") {
+                        print("Button Play")
+                        player = loadBundleAudio(soundFile)
+                        print("player", player as Any)
+                        // Loop indefinitely
+                        player?.numberOfLoops = -1
+                        player?.play()
+                    } //button
+                    Button("Stop") {
+                        print("Button Stop")
+                        player?.stop()
+                    } //button
+                }
                 NavigationLink (destination: Login_Page()){
                     Text("Login")
                 } //Navigation Link

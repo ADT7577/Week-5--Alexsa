@@ -51,14 +51,7 @@ struct Landing_Page: View {
                     .font(.title)
                     .foregroundColor(.orange)
             } //End of Vstack Logo
-  
-            
-    NavigationView{
-       NavigationLink (destination: Login_Page()){
-       Text("Login")
-        } //Navigation Link
-    }//Navigation View
-            
+
             
 
 //AUDIO
@@ -78,8 +71,17 @@ struct Landing_Page: View {
                     } //button
                 } //Hstack
             } //VStack
-          } //Vstack Main
+            
+VStack{
+    NavigationView{
+    NavigationLink (destination: Login_Page()){
+    Text("Login")
+    } //Navigation Link
+  }//Navigation View
+} //Vstack
+        } //Vstack Main
         
+             
       
         
         

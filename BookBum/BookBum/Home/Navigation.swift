@@ -8,12 +8,24 @@
 import SwiftUI
 
 struct Navigation: View {
-    @State private var navPath = NavigationPath()
+
     
     
     var body: some View {
-        NavigationStack(path: $navPath) {
+        NavigationStack {
             VStack {
+                NavigationLink(value: "A"){
+                    Text("Notifications")
+                }
+                NavigationLink(value:"B"){
+                    Text("Following")
+                }
+                NavigationLink(value:"C"){
+                    Text("Post")
+                }
+                NavigationLink(value:"D"){
+                    Text("Following")
+                }
                 }//Vstack
             
             

@@ -35,7 +35,6 @@ struct Landing_Page: View {
     var body: some View {
         
         NavigationView{
-            
         NavigationLink (destination: Login_Page()){
         Text("Login")
             

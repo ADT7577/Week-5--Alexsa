@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		956D976C29AE9259004D61E9 /* Damiano_Baldoni_ChillJazzLoop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 956D976B29AE9259004D61E9 /* Damiano_Baldoni_ChillJazzLoop.mp3 */; };
 		956D976E29AE97A4004D61E9 /* Landing Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956D976D29AE97A4004D61E9 /* Landing Page.swift */; };
+		956D977729AEBA15004D61E9 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956D977629AEBA15004D61E9 /* Navigation.swift */; };
 		9584A4CA29A46FCC0061C1C4 /* BookBumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584A4C929A46FCC0061C1C4 /* BookBumApp.swift */; };
 		9584A4CE29A46FCC0061C1C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9584A4CD29A46FCC0061C1C4 /* Assets.xcassets */; };
 		9584A4D129A46FCC0061C1C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9584A4D029A46FCC0061C1C4 /* Preview Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		956D976B29AE9259004D61E9 /* Damiano_Baldoni_ChillJazzLoop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Damiano_Baldoni_ChillJazzLoop.mp3; path = ../../../../Final/assets/Music/Damiano_Baldoni_ChillJazzLoop.mp3; sourceTree = "<group>"; };
 		956D976D29AE97A4004D61E9 /* Landing Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Landing Page.swift"; sourceTree = "<group>"; };
+		956D977629AEBA15004D61E9 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		9584A4C629A46FCC0061C1C4 /* BookBum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookBum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9584A4C929A46FCC0061C1C4 /* BookBumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookBumApp.swift; sourceTree = "<group>"; };
 		9584A4CD29A46FCC0061C1C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		956D977529AEB9EC004D61E9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				956D977629AEBA15004D61E9 /* Navigation.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		9584A4BD29A46FCC0061C1C4 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 			children = (
 				9584A4C929A46FCC0061C1C4 /* BookBumApp.swift */,
 				956D976F29AEAE10004D61E9 /* Login */,
+				956D977529AEB9EC004D61E9 /* Home */,
 				9584A4F329A46FD90061C1C4 /* RResources */,
 				9584A4CF29A46FCC0061C1C4 /* Preview Content */,
 			);
@@ -274,6 +285,7 @@
 				9584A4CA29A46FCC0061C1C4 /* BookBumApp.swift in Sources */,
 				956D976E29AE97A4004D61E9 /* Landing Page.swift in Sources */,
 				9584A4FB29A48D360061C1C4 /* Login Page.swift in Sources */,
+				956D977729AEBA15004D61E9 /* Navigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

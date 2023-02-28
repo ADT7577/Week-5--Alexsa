@@ -85,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		956D976F29AEAE10004D61E9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				956D976D29AE97A4004D61E9 /* Landing Page.swift */,
+				9584A4FA29A48D360061C1C4 /* Login Page.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		9584A4BD29A46FCC0061C1C4 = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				9584A4C929A46FCC0061C1C4 /* BookBumApp.swift */,
-				956D976D29AE97A4004D61E9 /* Landing Page.swift */,
-				9584A4FA29A48D360061C1C4 /* Login Page.swift */,
+				956D976F29AEAE10004D61E9 /* Login */,
 				95EA860729A5373500B1A5F6 /* Network.swift */,
 				9584A4F329A46FD90061C1C4 /* RResources */,
 				9584A4CF29A46FCC0061C1C4 /* Preview Content */,

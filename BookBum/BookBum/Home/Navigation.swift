@@ -24,7 +24,7 @@ struct Navigation: View {
                     Text("Post")
                 }
                 NavigationLink(value:"D"){
-                    Text("Favorites")
+                    Text("Liked Books")
                 }
                 NavigationLink(value:"F"){
                     Text("Settings")

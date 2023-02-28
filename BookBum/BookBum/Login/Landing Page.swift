@@ -35,11 +35,19 @@ struct Landing_Page: View {
     var body: some View {
         NavigationView{
             VStack{
+                Image(uiImage: UIImage(named: "Logo.png")!)
+                            .renderingMode(/*@START_MENU_TOKEN@*/.original/*@END_MENU_TOKEN@*/)
+                            .resizable()
+                            .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                            .padding(.vertical)
+                            .frame(width:440, height:440)
+                
                 NavigationLink (destination: Login_Page()){
                     Text("Login")
                 } //Navigation Link
             }//Navigation View
         }//Vstack
+
     
         
         

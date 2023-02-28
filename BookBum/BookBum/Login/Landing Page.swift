@@ -33,16 +33,17 @@ struct Landing_Page: View {
     
     
     var body: some View {
-        
         NavigationView{
-        NavigationLink (destination: Login_Page()){
-        Text("Login")
-            
-            
-        } //Navigation Link
-      }//Navigation View
-
+            VStack{
+                NavigationLink (destination: Login_Page()){
+                    Text("Login")
+                } //Navigation Link
+            }//Navigation View
+        }//Vstack
     
+        
+        
+        
 //VStack {
 //            //Logo and Text
 //            VStack {

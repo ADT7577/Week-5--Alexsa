@@ -34,13 +34,32 @@ struct Landing_Page: View {
     
     var body: some View {
         NavigationView{
+            
             VStack{
+                Text("BookBum © 2023")
+                            .font(.caption)
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .font(.title)
+                            .foregroundColor(.orange)
                 Image(uiImage: UIImage(named: "Logo.png")!)
                             .renderingMode(/*@START_MENU_TOKEN@*/.original/*@END_MENU_TOKEN@*/)
                             .resizable()
                             .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                             .padding(.vertical)
                             .frame(width:440, height:440)
+                Button("Play") {
+                                      print("Button Play")
+                                      player = loadBundleAudio(soundFile)
+                                      print("player", player as Any)
+                                      // Loop indefinitely
+                                      player?.numberOfLoops = -1
+                                      player?.play()
+                                  } //button
+                        Button("Stop") {
+                                      print("Button Stop")
+                                      player?.stop()
+                                  } //button
                 
                 NavigationLink (destination: Login_Page()){
                     Text("Login")
@@ -49,26 +68,6 @@ struct Landing_Page: View {
         }//Vstack
 
     
-        
-        
-        
-//VStack {
-//            //Logo and Text
-//            VStack {
-//                Image(uiImage: UIImage(named: "Logo.png")!)
-//                    .renderingMode(/*@START_MENU_TOKEN@*/.original/*@END_MENU_TOKEN@*/)
-//                    .resizable()
-//                    .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-//                    .padding(.vertical)
-//                    .frame(width:440, height:440)
-//
-//                Text("BookBum © 2023")
-//                    .font(.caption)
-//                    .fontWeight(.bold)
-//                    .multilineTextAlignment(.center)
-//                    .font(.title)
-//                    .foregroundColor(.orange)
-//            } //End of Vstack Logo
 
             
 

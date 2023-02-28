@@ -36,12 +36,7 @@ struct Landing_Page: View {
         NavigationView{
             
             VStack{
-                Text("BookBum © 2023")
-                            .font(.caption)
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                            .font(.title)
-                            .foregroundColor(.orange)
+            
                 Image(uiImage: UIImage(named: "Logo.png")!)
                             .renderingMode(/*@START_MENU_TOKEN@*/.original/*@END_MENU_TOKEN@*/)
                             .resizable()

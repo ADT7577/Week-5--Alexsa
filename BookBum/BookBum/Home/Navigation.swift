@@ -18,15 +18,18 @@ struct Navigation: View {
                     Text("Notifications")
                 }
                 NavigationLink(value:"B"){
-                    Text("Following")
+                    Text("My BookClub")
                 }
                 NavigationLink(value:"C"){
                     Text("Post")
                 }
                 NavigationLink(value:"D"){
-                    Text("Following")
+                    Text("Favorites")
                 }
-                }//Vstack
+                NavigationLink(value:"F"){
+                    Text("Settings")
+                }
+            }//Vstack
             
             
         }//Navigation

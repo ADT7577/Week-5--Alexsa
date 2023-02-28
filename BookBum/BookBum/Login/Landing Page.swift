@@ -11,7 +11,7 @@ import AVFoundation
 
 let bundleAudio = ["Damiano_Baldoni_ChillJazzLoop.mp3"];
 
-//
+
 
 func loadBundleAudio(_ fileName: String) -> AVAudioPlayer? {
     let path = Bundle.main.path(forResource: fileName, ofType:nil)!
@@ -24,6 +24,7 @@ func loadBundleAudio(_ fileName: String) -> AVAudioPlayer? {
     return nil
 }
 
+
 struct Landing_Page: View {
     @State private var navPath = NavigationPath()
     @State private var soundIndex = 0
@@ -32,9 +33,6 @@ struct Landing_Page: View {
     
     
     var body: some View {
-       //Main
-        
-        
         VStack {
             
             //Logo and Text
@@ -53,12 +51,13 @@ struct Landing_Page: View {
                     .font(.title)
                     .foregroundColor(.orange)
             } //End of Vstack Logo
+  
             
-            NavigationView{
-                NavigationLink (destination: Login_Page()){
-                    Text("Login")
-                }
-            }
+    NavigationView{
+       NavigationLink (destination: Login_Page()){
+       Text("Login")
+        } //Navigation Link
+    }//Navigation View
             
             
 

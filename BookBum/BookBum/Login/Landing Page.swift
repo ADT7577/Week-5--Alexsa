@@ -64,23 +64,23 @@ struct Landing_Page: View {
 
             
 
-//AUDIO
-    VStack {
-      HStack {
-         Button("Play") {
-                        print("Button Play")
-                        player = loadBundleAudio(soundFile)
-                        print("player", player as Any)
-                        // Loop indefinitely
-                        player?.numberOfLoops = -1
-                        player?.play()
-                    } //button
-          Button("Stop") {
-                        print("Button Stop")
-                        player?.stop()
-                    } //button
-                } //Hstack
-            } //VStack
+////AUDIO
+//    VStack {
+//      HStack {
+//         Button("Play") {
+//                        print("Button Play")
+//                        player = loadBundleAudio(soundFile)
+//                        print("player", player as Any)
+//                        // Loop indefinitely
+//                        player?.numberOfLoops = -1
+//                        player?.play()
+//                    } //button
+//          Button("Stop") {
+//                        print("Button Stop")
+//                        player?.stop()
+//                    } //button
+//                } //Hstack
+//            } //VStack
             
             
             

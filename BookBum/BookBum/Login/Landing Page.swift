@@ -33,24 +33,34 @@ struct Landing_Page: View {
     
     
     var body: some View {
-        VStack {
+        
+        NavigationView{
             
-            //Logo and Text
-            VStack {
-                Image(uiImage: UIImage(named: "Logo.png")!)
-                    .renderingMode(/*@START_MENU_TOKEN@*/.original/*@END_MENU_TOKEN@*/)
-                    .resizable()
-                    .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-                    .padding(.vertical)
-                    .frame(width:440, height:440)
-                
-                Text("BookBum © 2023")
-                    .font(.caption)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                    .font(.title)
-                    .foregroundColor(.orange)
-            } //End of Vstack Logo
+        NavigationLink (destination: Login_Page()){
+        Text("Login")
+            
+            
+        } //Navigation Link
+      }//Navigation View
+
+    
+//VStack {
+//            //Logo and Text
+//            VStack {
+//                Image(uiImage: UIImage(named: "Logo.png")!)
+//                    .renderingMode(/*@START_MENU_TOKEN@*/.original/*@END_MENU_TOKEN@*/)
+//                    .resizable()
+//                    .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+//                    .padding(.vertical)
+//                    .frame(width:440, height:440)
+//
+//                Text("BookBum © 2023")
+//                    .font(.caption)
+//                    .fontWeight(.bold)
+//                    .multilineTextAlignment(.center)
+//                    .font(.title)
+//                    .foregroundColor(.orange)
+//            } //End of Vstack Logo
 
             
 
@@ -72,14 +82,9 @@ struct Landing_Page: View {
                 } //Hstack
             } //VStack
             
-VStack{
-    NavigationView{
-    NavigationLink (destination: Login_Page()){
-    Text("Login")
-    } //Navigation Link
-  }//Navigation View
-} //Vstack
-        } //Vstack Main
+            
+            
+//        } //Vstack Main
         
              
       
